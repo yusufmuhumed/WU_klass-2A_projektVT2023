@@ -23,12 +23,12 @@
 header{
     position: fixed;
     grid-area:he;
-    height: 150px;
+    height: 100px;
     width: 1720px;
-    
-    background: rgb(255, 255, 255);
+    max-width: 100%;
+    background: rgb(79, 61, 61);
     display: flex;
-    justify-content: center;
+    justify-content:center ;
     z-index: 999;
 }
 
@@ -36,7 +36,7 @@ nav {
     height: 80px;
     position: absolute;
     left: 1410px;
-    background-color: white;
+    background-color: rgb(79, 61, 61);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -57,7 +57,7 @@ nav {
     flex-direction: column;
     height: 700px;
     width: 200px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(79, 61,61);
     justify-content: space-around;
     align-items: center;
     position: absolute;
@@ -125,6 +125,7 @@ main{
 
 #rubrik_bästa_bageriet{
     margin-top: 20px;
+    margin-right: 10px;
 }
 
 
@@ -161,9 +162,13 @@ footer{
 #Startsida_valkommen{
     color: aliceblue;
     position: absolute;
-    top: 150px;
-    left: 500px;
+    top: 175px;
+    left: 455px;
+    font-size: 65px;
+    
 }
+
+
 #main_button{
     height: 100px;
     width: 250px;
@@ -173,6 +178,8 @@ footer{
     left: 735px;
     background-color: rgb(118, 111, 111);
     border-radius: 50px ;
+    border: 3px solid black;
+    
 }
 
 #section_button{
@@ -224,6 +231,4 @@ footer{
 
 
 
-h1{
-  text-decoration: double;  
-}
+
