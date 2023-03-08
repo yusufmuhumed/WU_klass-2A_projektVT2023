@@ -23,8 +23,8 @@
 header{
     position: fixed;
     grid-area:he;
-    height: 100px;
-    width: 1720px;
+    height: 125px;
+    width: 100%;
     max-width: 100%;
     background: rgb(79, 61, 61);
     display: flex;
@@ -35,7 +35,7 @@ header{
 nav {
     height: 80px;
     position: absolute;
-    left: 1410px;
+    left: 90%;
     background-color: rgb(79, 61, 61);
     display: flex;
     justify-content: flex-end;
@@ -146,7 +146,7 @@ footer{
     top: 10px;
     display: flex;
     align-items: center; 
-    
+    color: aliceblue;
     position: relative;
     flex-direction: row;
     flex-wrap: wrap;
@@ -159,41 +159,69 @@ footer{
    
 }
 
+
+
 #Startsida_valkommen{
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     position: absolute;
     top: 175px;
-    left: 455px;
+    left: 32%;
     font-size: 65px;
     
 }
 
 
 #main_button{
-    height: 100px;
-    width: 250px;
+    height: 80px;
+    width: 200px;
     transform: translate(-50%, -50%);
     position: absolute;
-    top: 500px;
-    left: 735px;
+    top: 350px;
+    left: 50%;
     background-color: rgb(118, 111, 111);
     border-radius: 50px ;
-    border: 3px solid black;
+    border: 3px dotted rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
     
 }
 
+#main_button:hover{
+    transform: scale(1.1);
+    left: 43%;
+    top: 315px;
+}
 #section_button{
     background: grey;
-    width: 150px;
-    height: 70px;
-    border-radius: 15px;
+    width: 130px;
+    height: 60px;
+    color: black;
+    border: 3px dotted black;
+    border-radius: 30px;
     position: absolute;
     bottom: 20px;
     right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
     
+    
+
+
+#section_button:hover{
+    transform: scale(1.1);
     
 }
 #card1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    color: aliceblue;
     position: absolute;
     left: 10px;
     height: 550px;
@@ -201,34 +229,53 @@ footer{
     background: url(../img/yeh-xintong-go3DT3PpIw4-unsplash.jpg);
 }
 
+
 #card2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     position: absolute;
     left: 525px;
     height: 225px;
     width: 900px;
-    background: url();
+    background-size: cover;
+    background: url(../img/andy-li-RndRFJ1v1kk-unsplash.jpg);
 }
 
 #card3{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     position: absolute;
     top:250px;
     left: 550px;
     width: 300px;
     height: 300px;
-    background-image: url(../img/conor-brown-sqkXyyj4WdE-unsplash.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-image: url(../img/conor-brown-sqkXyyj4WdE-unsplash\ \(1\).jpg);
+    background-size: cover;
+    
 }
 
 #card4{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     position: absolute;
     top:250px;
     left: 1100px;
     width: 300px;
     height: 300px;
-    background: url();
+    background: url(../img/andy-li-RndRFJ1v1kk-unsplash.jpg);
+    background-size: cover;
+
 }
 
+#card1_info{
+    margin-top: 40px;
+    margin-left: 15px;
+}
 
-
-
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
