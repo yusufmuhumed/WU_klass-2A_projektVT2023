@@ -26,17 +26,20 @@ header{
     height: 125px;
     width: 100%;
     max-width: 100%;
-    background: rgb(79, 61, 61);
+    background-color: #F5DEB3;
     display: flex;
     justify-content:center ;
     z-index: 999;
 }
-
+#logo_header{
+    height: 120px;
+    
+}
 nav {
     height: 80px;
     position: absolute;
     left: 90%;
-    background-color: rgb(79, 61, 61);
+    background-color: #F5DEB3;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -113,33 +116,105 @@ main{
 
 #article_startsida{
     grid-area:ar;
-    background: grey;
+    background: #F5DEB3;
     margin-top:150px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     text-align: center;
-    
-    
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 60px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+	
+	
 }
 
 #rubrik_bästa_bageriet{
-    margin-top: 20px;
-    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 36px;
+    font-weight:800;
+    
 }
+
+#text_bästa_bageriet {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
 
 
 
 footer{
     grid-area:fo;
     height: 310px;
-    background: navajowhite;
+   
+    background-color: #F5DEB3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+footer {
+    height: 310px;
+    background-color: #F5DEB3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  .logo img {
+    height: 200px;
+  }
+  
+  .contact-info h3,
+  .social-media h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info p {
+    margin: 0;
+  }
+  
+  .social-media a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #333;
+    font-size: 28px;
+    transition: color 0.2s;
+  }
+  
+  .social-media a:hover {
+    color: #F5DEB3;
+  }
+  
+  .fa-facebook{
+    background: #3B5998;
+    color: white;
+  }
+  
+   
+  
 
 #section_startsida{
     grid-area:se;
     display: flex;
     position: relative;
+    background-color: #f5f5f5;
+
     
 }
 .section_cards_index{
@@ -159,13 +234,17 @@ footer{
    
 }
 
+#main_text_startsida{
+    color: rgb(255, 255, 255);
+    text-decoration: double;
+}
 
 
 #Startsida_valkommen{
     color: rgb(255, 255, 255);
     position: absolute;
     top: 175px;
-    left: 32%;
+    left: 31%;
     font-size: 65px;
     
 }
@@ -176,7 +255,7 @@ footer{
     width: 200px;
     transform: translate(-50%, -50%);
     position: absolute;
-    top: 350px;
+    top: 60%;
     left: 50%;
     background-color: rgb(118, 111, 111);
     border-radius: 50px ;
@@ -191,7 +270,18 @@ footer{
 #main_button:hover{
     transform: scale(1.1);
     left: 43%;
-    top: 315px;
+    top: 55%;
+}
+
+#main_text_startsida{
+    position: absolute;
+    margin-left: 350px;
+    margin-right: 400px;
+    left: 6%;
+    top: 39.5%;
+    text-align: center;
+    
+
 }
 #section_button{
     background: grey;
@@ -270,12 +360,14 @@ footer{
 
 }
 
-#card1_info{
+#card_info{
     margin-top: 40px;
     margin-left: 15px;
+    text-decoration: underline;
 }
 
 a{
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
+
