@@ -20,26 +20,69 @@
 }
 
 
-header{
-    position: fixed;
+.page-header{
+    position: absolute;
     grid-area:he;
     height: 125px;
     width: 100%;
     max-width: 100%;
-    background-color: #F5DEB3;
+    background-color: #ffffff;
     display: flex;
     justify-content:center ;
-    z-index: 999;
+    padding: 20px 0;
+    z-index: 1;
 }
+
+.page-header.is-sticky {
+    position: fixed;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+    padding: 8px 0;
+    animation: slideDown 0.5s ease-out;
+    background-color: #F5DEB3;
+
+  }
+
+  .page-nav.is-sticky {
+    background-color: #F5DEB3;
+  }
+  
+  
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
 #logo_header{
-    height: 120px;
-    
+   height: 160px;    
 }
+
+#logo_header_IsSticky{
+    display: none;
+}
+
+.page-header.is-sticky #logo_header {
+    display: none;
+  }
+
+.page-header.is-sticky #logo_header_IsSticky {
+    max-width: 100%;
+    height: 110px;
+    display: block;
+}
+
+.page-header.is-sticky nav {
+    background-color: #F5DEB3;
+}
+
 nav {
-    height: 80px;
+    height: 110px;
     position: absolute;
     left: 90%;
-    background-color: #F5DEB3;
+    background-color: #ffffff;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -58,13 +101,13 @@ nav {
 #nav-links {
     display: flex;
     flex-direction: column;
-    height: 700px;
+    height: 740px;
     width: 200px;
-    background-color: rgb(79, 61,61);
+    background-color: #F5DEB3;
     justify-content: space-around;
     align-items: center;
     position: absolute;
-    top: -700px;
+    top: -760px;
     right: 0px;
     transition: all 0.5s;
 }
@@ -101,7 +144,7 @@ nav {
 }
 
 .nav_active {
-    transform: translateY(780px);
+    transform: translateY(820px);
 }
 
 main{
@@ -234,17 +277,15 @@ footer {
    
 }
 
-#main_text_startsida{
-    color: rgb(255, 255, 255);
-    text-decoration: double;
-}
+
 
 
 #Startsida_valkommen{
+    margin: 220px;
+    text-align: center;
     color: rgb(255, 255, 255);
-    position: absolute;
-    top: 175px;
-    left: 31%;
+    
+    
     font-size: 65px;
     
 }
@@ -274,14 +315,13 @@ footer {
 }
 
 #main_text_startsida{
-    position: absolute;
-    margin-left: 350px;
-    margin-right: 400px;
-    left: 6%;
-    top: 39.5%;
     text-align: center;
     
-
+    margin: 100px;
+    text-align: center;
+    
+    color: rgb(255, 255, 255);
+    text-decoration: double;
 }
 #section_button{
     background: grey;
