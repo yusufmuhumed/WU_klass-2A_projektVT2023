@@ -541,11 +541,20 @@ a{
 
 #om_oss_bild{
     grid-area: se3;
-    background-image: url(../img/bakery.jpg);
+    background-image: url(../img/bakery3.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat ;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 80px;
     margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.21), 0 6px 20px 0 rgba(0, 0, 0, 0.2) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
     
 
 
@@ -553,13 +562,31 @@ a{
 
 #om_oss_article{
     grid-area: ar3;
-    background-color: #3B5998;
+    background-color:#F5DEB3;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.21), 0 6px 20px 0 rgba(0, 0, 0, 0.2) ;
+
   
 }
 
-#om_oss_personal{
+#om_oss_textbild{
     grid-area: se4;
-    background-color: red;
+    background-image: url(../img/bakery4.psd);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.21), 0 6px 20px 0 rgba(0, 0, 0, 0.2) ;
+
+}
+
+#rubrik1_om_oss{
+    font-size: 60px;
+    margin-bottom:150px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.21), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    
+
+    
 }
 
 #om_oss_personal2{
@@ -567,3 +594,32 @@ a{
     background-color: purple ;
 }
 
+#text_bild_om_oss{
+    margin-left: 300px;
+    margin-right: 300px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    font-weight: 700;
+    color: rgb(242, 242, 242);
+    font-size: 18px;
+    text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.21), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+
+    
+}
+#rubrik2_om_oss{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 40px;
+    
+}
+
+#text_om_oss{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 500;
+    line-height: 1.75;
+
+
+}
