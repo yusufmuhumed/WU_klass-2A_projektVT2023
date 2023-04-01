@@ -51,64 +51,16 @@
 #grid_wrapper4{
     display: grid;
     height: 300vh;
-    grid-template-columns: minmax(50%,1fr) minmax(50%,1fr);
-    grid-template-rows: 100px 550px 700px 500px 300px; 
+    grid-template-columns: 36%;
+    grid-template-rows: 100px 550px 700px 500px 400px; 
     grid-template-areas: 
     "he he"
     "se6 se6"
-    "se7 ar4"
-    "ar5 ar5"
+    "ar4 se7"
+    "ar5 se8"
     "fo fo";
 }
 
-#hitta_oss_bild{
-    grid-area: se6;
-    background-size: 100%;
-    background-repeat: no-repeat ;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 80px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.21), 0 6px 20px 0 rgba(0, 0, 0, 0.2) ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    overflow:visible;
-    background-image: url(../img/andy-li-RndRFJ1v1kk-unsplash.jpg);
-}
-
-#rubrik1_hitta_oss{
-    font-size: 60px;
-    margin-bottom:150px;
-    color: rgb(255, 255, 255);
-    text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.21), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-    
-}
-
-#text_bild_hitta_oss{
-    margin-left: 300px;
-    margin-right: 300px;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    font-weight: 600;
-    color: rgb(255, 255, 255);
-    font-size: 21px;
-    text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.21), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-}
-#hitta_oss_map{
-    grid-area: se7;
-    
-    margin: 20px;
-}
-
-#map{
-    height: 580px;
-    width: 580px;
-
-}
 
 
 
@@ -149,9 +101,14 @@
   }
 
 #logo_header{
-   height: 160px;    
+   height: 160px; 
+    
 }
 
+#logo_footer{
+    height: 250px;
+    width: 250px;
+}
 #logo_header_IsSticky{
     display: none;
     
@@ -169,7 +126,7 @@
 }
 
 .page-header.is-sticky nav {
-    background-color: #F5DEB3;
+    background-color:#F5DEB3  ;
 }
 .page-header.is-sticky #nav-links {
     background-color:#F5DEB3;
@@ -233,11 +190,11 @@ nav {
 }
 
 .burger_toggle #burger_line_1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
+    transform: rotate(-45deg) translate(-20px, 10px);
 }
 
 .burger_toggle #burger_line_3 {
-    transform: rotate(45deg) translate(-5px, 6px);
+    transform: rotate(45deg) translate(-10px, 1px);
 }
 
 .nav_active {
@@ -292,8 +249,8 @@ nav {
 
 footer{
     grid-area:fo;
-    height: 310px;
-   
+    height: 420px;
+    max-height: max-content;
     background-color: #F5DEB3;
     display: flex;
     justify-content: center;
@@ -301,7 +258,7 @@ footer{
 }
 
 footer {
-    height: 310px;
+    height: 420px;
     background-color: #F5DEB3;
     display: flex;
     justify-content: center;
@@ -674,6 +631,7 @@ a{
     font-weight: 800;
     color: rgb(0, 0, 0);
     font-size: 20px;
+    line-height: 1.75;
     text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.21), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 
     
@@ -709,7 +667,6 @@ a{
     to bottom,
     #F5DEB3 0%,
     #F5DEB3 30%,
-    #F5DEB3 50%,
     rgb(255, 255, 255) 100%
      )
 
@@ -742,5 +699,90 @@ a{
     
     background: #F5DEB3;
     overflow: hidden;
+}
+
+#hitta_oss_bild{
+    grid-area: se6;
+    background-size: 100%;
+    background-repeat: no-repeat ;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.21), 0 6px 20px 0 rgba(0, 0, 0, 0.2) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow:visible;
+    background-image: url(../img/andy-li-RndRFJ1v1kk-unsplash.jpg);
+}
+
+#rubrik1_hitta_oss{
+    font-size: 60px;
+    margin-bottom:150px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.21), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    
+}
+
+#text_bild_hitta_oss{
+    margin-left: 300px;
+    margin-right: 300px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-size: 21px;
+    text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.21), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+#hitta_oss_map{
+    grid-area: se7;
+    
+    margin: 20px;
+}
+
+#map{
+    height: 100%;
+    width: 100%;
+
+}
+
+#hitta_oss_infocard{
+    grid-area: ar4;
+    background-color: #F5DEB3;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.21), 0 6px 20px 0 rgba(0, 0, 0, 0.2) ;
+
+}
+
+#hitta_oss_infocard2{
+    grid-area: ar5;
+    background-color: #F5DEB3;
+    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.21), 0 6px 20px 0 rgba(0, 0, 0, 0.2) ;
+
+
+}
+
+#hitta_oss_bild2{
+    grid-area: se8;
+    background-color: #333;
+    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.21), 0 6px 20px 0 rgba(0, 0, 0, 0.2) ;
+
+}
+
+.rubrik_article_hitta_oss{
+    font-size: 60px;
+    margin-bottom:150px;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.21), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
