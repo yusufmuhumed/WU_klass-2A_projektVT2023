@@ -52,7 +52,7 @@
 #grid_wrapper4{
     display: grid;
     height: 300vh;
-    grid-template-columns: 36%;
+    grid-template-columns: 36% auto;
     grid-template-rows: 100px 550px 700px 500px 400px; 
     grid-template-areas: 
     "he he"
