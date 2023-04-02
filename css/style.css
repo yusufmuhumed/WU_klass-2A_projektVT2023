@@ -773,7 +773,7 @@ a{
 
 #hitta_oss_bild2{
     grid-area: se8;
-    
+    background-image: url(../img/bild_info_hitta_oss.jpg);
     margin: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
